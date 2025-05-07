@@ -1,0 +1,5 @@
+export interface doctorModel {
+  img: string;
+  Hospital: string;
+  Specialization: string;
+}
