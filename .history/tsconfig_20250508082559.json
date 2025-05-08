@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "include": ["src", "tests/PatientView/History/HistoryCompontent.test.tsx", "tests/PatientView/History/HistoryHome.test.tsx", "tests/PatientView/Home.test.tsx", "tests/PatientView/Appointment/BookAppointment.test.tsx", "tests/PatientView/Appointment/RescheduleAppointment.test.tsx", "tests/PatientView/Appointment/ViewEditAppointment.test.tsx", "tests/PatientView/Auth/LoginContainer.test.tsx", "tests/PatientView/Auth/SignupContainer.test.tsx", "tests/PatientView/Dashboard/CustomDateCell.test.tsx", "tests/PatientView/Dashboard/DashboardHome.test.tsx", "tests/PatientView/Dashboard/SuggestionBox.test.tsx", "tests/PatientView/Dashboard/SuggestionComponent.test.tsx", "tests/PatientView/Dashboard/UpComingApt.test.tsx", "tests/PatientView/Doctors/DoctorsHome.test.tsx", "tests/PatientView/Profile/ProfileHome.test.tsx", "tests/Services/API/FetchAPIUser.test.tsx", "tests/Services/API/FetchDocAvailability.test.tsx", "tests/Services/API/FetchDocData.test.tsx", "tests/Services/API/fetchDocList.test.tsx", "tests/Services/API/HandleRegSubmit.test.tsx", "tests/Services/API/HandleSubmit.test.tsx", "tests/Services/Appointments/bookApt.test.tsx", "tests/Services/Appointments/getUserApt.test.tsx", "tests/Services/Auth/CheckUserType.test.tsx"]
+}
