@@ -1,54 +1,84 @@
-# React + TypeScript + Vite
+# HAMS - Hospital Administration Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HAMS is a full-stack web application designed to manage hospital operations efficiently. It includes user roles like Admin, Doctor, and Patient with features tailored to each.
+---
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
 
-## Expanding the ESLint configuration
+- TypeScript
+- HTML/CSS
+- Jest
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Frontend Setup
+
+```bash
+cd HAMS-System
+npm install
+npx http-server
+# or if defined in scripts
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Running Tests
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# Frontend
+cd HAMS-System
+npm test
 ```
+
+---
+
+
+## Project Structure
+
+### Frontend `src/`
+
+```
+App.tsx
+Components/
+  ├── AdminView/
+  ├── DoctorView/
+  └── PatientView/
+Css/
+Models/
+Services/
+assets/
+main.tsx
+setupTest.ts
+vite-env.d.ts
+```
+
+### Frontend `tests/`
+
+```
+DoctorView/
+PatientView/
+Services/
+```
+
+---
+
+## Features
+
+- Doctor profile and availability management
+- Patient appointment booking and history
+- Admin user management
+- Calendar view for appointments
+- Authentication and role-based access
+
+---
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/feature-name`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/feature-name`)
+5. Open a Pull Request
+
+---
