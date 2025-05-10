@@ -72,6 +72,11 @@ Services/
 - Authentication and role-based access
 
 ---
+## Development Notes
+
+- `jest.setup.ts` is configured for frontend global test setup.
+
+---
 
 ## Contributing
 
